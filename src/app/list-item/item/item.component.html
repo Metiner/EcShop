@@ -1,0 +1,22 @@
+<div class="row item m-1 justify-content-center">
+  <div class="col-auto">
+    <img class="item-image" src="{{item.image_url}}">
+  </div>
+  <div class="col-12">
+    <h3 class="title"><a href="#">{{item.title}}</a></h3>
+  </div>
+  <div class="col">
+    <div class="row justify-content-center">
+      <div class="col-auto">
+        <span class="price">{{item.price}} ₺</span>
+      </div>
+      <div class="col-4">
+        <input [(ngModel)]="quantity" type="number" placeholder="quantity">
+      </div>
+    </div>
+  </div>
+  <div class="col-12 add-to-cart">
+    <button (click)="add_to_cart()">Add to cart</button>
+  </div>
+</div>
+

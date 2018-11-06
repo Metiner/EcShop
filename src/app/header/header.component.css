@@ -1,0 +1,14 @@
+.navbar{
+  font-size: 20px;
+}
+.shopping-cart-count-text{
+  font-size: 16px;
+  color: red;
+  font-weight: bold;
+}
+.shopping-cart-image{
+  width: 40px;
+}
+.logout-text{
+  font-size: 15px;
+}

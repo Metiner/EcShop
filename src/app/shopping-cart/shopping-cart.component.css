@@ -1,0 +1,46 @@
+.item-image{
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+.title{
+  text-align: center;
+  font-size:14px;
+  margin:0 0 7px;
+}
+.checkout-item{
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+}
+.checkout-item-quantity{
+  font-size:30px;
+  text-align: center;
+}
+.checkout-price{
+  font-size: 25px;
+}
+.checkout-delete-img{
+  width: 40px;
+  cursor: pointer;
+}
+
+.checkout-button {
+  color: white;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  height: 30px;
+  background-color:#404040;
+  font-size:17px;
+  padding-top: 5px;
+  text-align:center;
+}
+
+.checkout-button:active{
+  background-color: #2a2a2a;
+
+}
+
+.checkout-container{
+  padding: 20px 40px 20px 40px;
+}

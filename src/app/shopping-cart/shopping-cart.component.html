@@ -1,0 +1,44 @@
+<app-header></app-header>
+<div class="checkout-container">
+  <div class="row checkout-item pl-5 pt-4">
+    <div class="col">
+      <h3 class="title">ITEM DETAILS</h3>
+    </div>
+    <div class="col d-flex justify-content-center align-items-center">
+      <h3 class="title">QUANTITY</h3>
+    </div>
+    <div class="col d-flex justify-content-center align-items-center text-right">
+      <h3 class="title">DELETE</h3>
+    </div>
+    <div class="col d-flex justify-content-end align-items-center">
+      <h3 class="title">PRICE</h3>
+    </div>
+  </div>
+  <div class="row checkout-item pl-5" *ngFor="let item of items_that_gonna_checkout">
+    <div class="col">
+      <div class="row align-items-center">
+        <div class="col-auto">
+          <img class="item-image" src="{{item.item.image_url}}">
+        </div>
+        <div class="col">
+          <h3 class="title"><a href="#">{{item.item.title}}</a></h3>
+        </div>
+      </div>
+    </div>
+    <div class="col d-flex justify-content-center align-items-center">
+      <span class="checkout-item-quantity">{{item.quantity}}</span>
+    </div>
+    <div (click)="delete_item_from_cart(item.item)" class="col d-flex justify-content-center align-items-center">
+      <img class="checkout-delete-img" src="../../assets/imgs/delete.png">
+    </div>
+    <div class="col d-flex justify-content-end align-items-center">
+      <span class="checkout-price">{{item.item.price}} ₺</span>
+    </div>
+  </div>
+  <div class="row pl-5 justify-content-end">
+    <div class="col-auto p-0">
+      <button class="checkout-button" (click)="checkout()">CHECKOUT | TOTAL : {{ total_price()}} ₺</button>
+    </div>
+  </div>
+</div>
+
